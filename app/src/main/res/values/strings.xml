@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">CalSci Scientific Calculator</string>
+    <string name="title_activity_calculator">Calculator</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="calculator">Calculator</string>
+    <string name="converter">Converter</string>
+    <string name="myfunctions">My Functions</string>
+    <string name="equation">Equations</string>
+    <string name="reset">Reset</string>
+    <string name="solve">Solve</string>
+    <string name="Equationsol">Equations Solver</string>
+    <string name="quadratic">Quadratic Equations</string>
+    <string name="cubic">Cubic Equations</string>
+    <string name="Simul1">Simultaneous Equations(2)</string>
+    <string name="Simul2">Simultaneous Equations(3)</string>
+    <string name="answer">Answer</string>
+    <string name="entera">Enter a</string>
+    <string name="enterb">Enter b</string>
+    <string name="enterc">Enter c</string>
+    <string name="enterd">Enter d</string>
+    <string name="entera1">Enter a\u2081</string>
+    <string name="entera2">Enter a\u2082</string>
+    <string name="entera3">Enter a\u2083</string>
+    <string name="enterb1">Enter b\u2081</string>
+    <string name="enterb2">Enter b\u2082</string>
+    <string name="enterb3">Enter b\u2083</string>
+    <string name="enterc1">Enter c\u2081</string>
+    <string name="enterc2">Enter c\u2082</string>
+    <string name="enterc3">Enter c\u2083</string>
+    <string name="enterd1">Enter d\u2081</string>
+    <string name="enterd2">Enter d\u2082</string>
+    <string name="enterd3">Enter d\u2083</string>
+    <string name="error">Error</string>
+    <string name="area">AREA</string>
+    <string name="energy">ENERGY</string>
+    <string name="length">LENGTH</string>
+    <string name="mass">MASS</string>
+    <string name="pressure">PRESSURE</string>
+    <string name="speed">SPEED</string>
+    <string name="temperature">TEMPERATURE</string>
+    <string name="volume">VOLUME</string>
+    <string name="convert">Convert</string>
+    <string name="adfun">ADD A FUNCTION</string>
+    <string name="funame">Function Name(max. 10 characters)</string>
+    <string name="function">Function_</string>
+    <string name="reultname">Name of Result( max.3 characters)</string>
+    <string name="numofvars">Number of variables</string>
+    <string name="variables">Variables:(max 2 characters)</string>
+    <string name="enter">Enter</string>
+    <string name="entervar1">Enter name of variable 1</string>
+    <string name="enternextvar">Enter name of next variable</string>
+    <string name="enterfun">Enter name of function</string>
+    <string name="enterres">Enter name of result variable</string>
+    <string name="unique">FUNCTION NAME MUST BE UNIQUE</string>
+    <string name="fields">FILL IN ALL TEXT FIELDS</string>
+    <string name="done">DONE</string>
+    <string name="result">result</string>
+    <string name="input">Input</string>
+    <string name="delmessage">You sure you want to delete this function?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="editfun">Edit_Function</string>
+    <string name="addfun">Add_Function</string>
+    <string name="invitefriend">Tell a friend</string>
+    <string name="sharetitle">App Information</string>
+    <string name="sharemessage">Hi, checkout this cool calculator app on google play, CalSci. Makes math so much easier.</string>
+    <string name="adid1">   ca-app-pub-1220923402157861/8438626400</string>
+    <string name="ad2s">ca-app-pub-1220923402157861/8392386760</string>
+    <string name="compute">computing.\nplease wait.</string>
+    <string name="adid3">ca-app-pub-1220923402157861/2922510574</string>
+    <string name="notallowed" translatable="false">variable name not allowed (starts with number)</string>
+    <string name="invitation_deep_link" translatable="false">deeplinks</string>
+    <string name="invitation_cta" translatable="false">download app</string>
+    <string name="savevals" translatable="false">Save Values</string>
+    <string name="saved">values saved</string>
+    <string name="novals">no values saved</string>
+</resources>

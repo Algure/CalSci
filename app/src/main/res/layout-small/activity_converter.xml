@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
+    tools:context="com.example.ajirigunn.calsci.Converter">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#005FFF"
+            android:elevation="16dp"
+            android:id="@+id/cb"
+            android:theme="@style/AppTheme"
+            android:layout_marginTop="0dp"
+            android:titleTextColor="?attr/titleTextColor"
+            android:subtitleTextColor="#fff"
+            android:transitionGroup="false"
+            android:touchscreenBlocksFocus="true"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context="com.example.ajirigunn.gunner.Converter"
+            android:background="#000"
+            android:id="@+id/pa">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView2"
+                android:layout_marginTop="200dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerHorizontal="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:divider="?android:dividerHorizontal"
+                    android:showDividers="middle"
+                    >
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/area"
+                        android:id="@+id/AREA"
+                        android:onClick="area"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energy"
+                        android:id="@+id/ENERGY"
+                        android:onClick="energy"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/length"
+                        android:id="@+id/LENGTH"
+                        android:onClick="length"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mass"
+                        android:id="@+id/MASS"
+                        android:onClick="mass"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pressure"
+                        android:id="@+id/PRESSURE"
+                        android:onClick="pressure"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speed"
+                        android:id="@+id/SPEED"
+                        android:onClick="speed"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temperature"
+                        android:id="@+id/TEMPERATURE"
+                        android:onClick="temperature"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:textColor="#fff"
+                        android:background="#005fff"
+                        android:layout_height="wrap_content"
+                        android:text="@string/volume"
+                        android:id="@+id/VOLUME"
+                        android:onClick="volume"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button113"
+                android:layout_marginTop="61dp"
+                android:background="#000"
+                android:drawableTop="@drawable/scale1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/group"
+            />
+    </FrameLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu"
+        android:id="@+id/nview">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

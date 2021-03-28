@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_back">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#005FFF"
+        android:elevation="16dp"
+        android:id="@+id/cb"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:layout_marginTop="0dp"
+        android:titleTextColor="?attr/titleTextColor"
+        android:subtitleTextColor="#fff"
+        android:transitionGroup="false"
+        android:touchscreenBlocksFocus="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/funame"
+                android:id="@+id/textView17"
+                android:layout_marginTop="70dp"
+                android:textSize="17sp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/enterfun"
+                android:id="@+id/nax"
+                android:textAlignment="center"
+android:singleLine="true"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:ems="2"
+                android:background="@drawable/button_background" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/reultname"
+                android:id="@+id/textView19"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/var"
+                android:hint="@string/enterres"
+                android:textAlignment="center"
+                android:imeOptions="actionNext"
+                android:text="y"
+                android:maxEms="1"
+                android:singleLine="true"
+                android:maxLength="3"
+                android:background="@drawable/button_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/numofvars"
+android:textSize="17sp"
+                android:maxLines="1"
+                android:id="@+id/textView20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView29"
+                android:layout_alignBottom="@+id/scrollView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="53dp"
+                android:layout_marginStart="53dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nov"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/variables"
+                android:fontFamily="serif"
+                android:textSize="17dp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/Vars"
+                android:background="#fff"
+                android:paddingLeft="30dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/entervar"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:maxEms="1"
+                android:singleLine="true"
+                android:hint="Enter name of variable 1"
+                android:background="@drawable/button_background"
+                android:imeOptions="actionNext"
+                android:maxWidth="4dp"
+                android:maxLength="3"/>
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/enter"
+                    android:id="@+id/add"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:background="#005FFF"
+                    android:textColor="#FFF"
+                    android:onClick="addvariable"
+                    android:layout_marginLeft="30dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reset"
+                    android:id="@+id/button119"
+                    android:background="#FF0000"
+                    android:textColor="#fff"
+                    android:onClick="reset"
+                    android:layout_marginLeft="250dp"
+                    android:layout_column="0"
+                    android:layout_row="1"/>
+
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ajirigunn.calsci">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/colpsi2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".homeclasses.gunnermain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.example.ajirigunn.calsci" android:scheme="http"/>
+                <data android:host="com.example.ajirigunn.calsci" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Calculator"
+            android:parentActivityName=".homeclasses.gunnermain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".homeclasses.gunnermain" />
+        </activity>
+        <activity
+            android:name=".Converter"
+            android:parentActivityName=".homeclasses.gunnermain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".homeclasses.gunnermain" />
+        </activity>
+        <activity
+            android:name=".Equations"
+            android:parentActivityName=".homeclasses.gunnermain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".homeclasses.gunnermain" />
+        </activity>
+        <activity
+            android:name=".Equations_activities.Quadratic"
+            android:parentActivityName=".Equations">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Equations" />
+        </activity>
+        <activity
+            android:name=".Equations_activities.Cubic"
+            android:parentActivityName=".Equations"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Equations" />
+        </activity>
+        <activity
+            android:name=".Equations_activities.simul1"
+            android:parentActivityName=".Equations">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Equations" />
+        </activity>
+        <activity
+            android:name=".Equations_activities.simul2"
+            android:parentActivityName=".Equations">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Equations" />
+        </activity>
+        <activity
+            android:name=".personal_classes.Personal"
+            android:parentActivityName=".homeclasses.gunnermain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".homeclasses.gunnermain" />
+        </activity>
+        <activity
+            android:name=".personal_classes.AddPersonal"
+            android:parentActivityName=".personal_classes.Personal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".personal_classes.Personal" />
+        </activity>
+        <activity android:name=".personal_classes.AddPersnal2" />
+        <activity
+            android:name=".personal_classes.Central_personal"
+            android:parentActivityName=".personal_classes.Personal" />
+
+        <receiver android:name=".calc_widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/calc_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".etails"
+            android:parentActivityName=".homeclasses.gunnermain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".personal_classes.Personal" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajirigunn.calsci.navfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Calculator"
+        android:drawableLeft="@drawable/blackcalc"
+        android:id="@+id/button4"
+        android:layout_gravity="left|top"
+        android:background="#fff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter"
+        android:drawableLeft="@drawable/blackscales"
+        android:id="@+id/button5"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="100dp"
+        android:background="#fff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equations"
+        android:background="#fff"
+        android:id="@+id/button6"
+        android:layout_gravity="left|center_vertical"
+        android:drawableLeft="@drawable/blackeq"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Functions"
+        android:id="@+id/button7"
+        android:background="#fff"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="100dp"
+        android:drawableLeft="@drawable/blackpersonal"/>
+
+</FrameLayout>

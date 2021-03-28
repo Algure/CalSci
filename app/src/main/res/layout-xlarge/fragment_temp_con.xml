@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.ajirigunn.calsci.temp_con"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button118"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:drawableTop="@drawable/delete"
+                android:background="#fff"
+                android:onClick="closetemp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/temperature"
+                android:id="@+id/textView6"
+                android:layout_row="11"
+                android:layout_column="2"
+                android:textColor="#000"
+                android:layout_columnSpan="2" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/button26"
+                android:layout_row="12"
+                android:layout_column="3"
+                android:background="@drawable/btnback"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:onClick="fkcon" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/button55"
+                android:layout_row="12"
+                android:layout_column="4"
+                android:background="@drawable/btnback"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:onClick="reset33" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="6dp"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/kc"
+                android:layout_row="14"
+                android:layout_column="0"
+                android:backgroundTint="#005FFF"
+                android:hint="kelvin"
+                android:digits="1234567890.-"
+                android:nestedScrollingEnabled="false"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="6dp"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/c"
+                android:layout_row="13"
+                android:layout_column="2"
+                android:hint="celcius"
+                android:backgroundTint="#005FFF"
+                android:digits="1234567890.-"
+                android:nestedScrollingEnabled="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/button60"
+                android:layout_row="13"
+                android:layout_column="3"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:background="@drawable/btnback"
+                android:onClick="fccon" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/button61"
+                android:layout_row="13"
+                android:layout_column="4"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:background="@drawable/btnback"
+                android:onClick="reset34" />
+
+
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="6dp"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/ck"
+                android:layout_row="14"
+                android:layout_column="2"
+                android:hint="celcius"
+                android:backgroundTint="#005FFF"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/button62"
+                android:layout_row="14"
+                android:layout_column="3"
+                android:background="@drawable/btnback"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:onClick="kccon" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/button63"
+                android:layout_row="14"
+                android:layout_column="4"
+                android:background="@drawable/btnback"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:onClick="reset35" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="6dp"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/fk"
+                android:layout_row="12"
+                android:layout_column="0"
+                android:hint="fahrenheit"
+                android:backgroundTint="#005FFF"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="6dp"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/kf"
+                android:layout_row="12"
+                android:layout_column="2"
+                android:backgroundTint="#005FFF"
+                android:hint="kelvin"
+                android:digits="1234567890.-"
+                android:nestedScrollingEnabled="false"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="6dp"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:layout_row="13"
+                android:layout_column="0"
+                android:backgroundTint="#005FFF"
+                android:hint="fahrenheit"
+                android:id="@+id/fc"
+                android:digits="1234567890.-"
+                android:nestedScrollingEnabled="false"/>
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

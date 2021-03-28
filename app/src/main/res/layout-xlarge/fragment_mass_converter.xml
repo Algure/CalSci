@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    tools:context="com.example.ajirigunn.calsci.mass_converter">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_centerInParent="true"
+            android:id="@+id/gridLayout3"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/button118"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:drawableTop="@drawable/delete"
+                android:background="#fff"
+                android:onClick="closemass"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/mass"
+                android:id="@+id/textView14"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/oz"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:backgroundTint="#005FFF"
+                android:hint="Ounce"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"
+                android:layout_width="200dp"
+                android:minHeight="50dp"/>
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/lb"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:backgroundTint="#005FFF"
+                android:hint="pounds "
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"
+                android:layout_width="200dp"
+                android:minHeight="50dp"/>
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/ozg"
+                android:layout_row="8"
+                android:layout_column="2"
+                android:backgroundTint="#005FFF"
+                android:hint="  g"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"
+                android:layout_marginLeft="6dp"
+
+                android:layout_width="200dp"
+                android:minHeight="50dp"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/ozcon"
+                android:layout_row="8"
+                android:layout_column="3"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/btnback"
+                android:onClick="ozcon" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/reset6"
+                android:layout_row="8"
+                android:layout_column="4"
+                android:background="@drawable/btnback"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:onClick="reset6" />
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/t"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:backgroundTint="#005FFF"
+                android:hint="tonnes"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"
+                android:layout_width="200dp"
+                android:minHeight="50dp"/>
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/lbkg"
+                android:layout_row="9"
+                android:layout_column="2"
+                android:hint="   kg"
+                android:backgroundTint="#005FFF"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"
+                android:layout_marginLeft="6dp"
+                android:layout_width="200dp"
+                android:minHeight="50dp"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/button56"
+                android:layout_row="9"
+                android:layout_column="3"
+                android:background="@drawable/btnback"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:onClick="lbcon" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/button57"
+                android:layout_row="9"
+                android:layout_column="4"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:background="@drawable/btnback"
+                android:onClick="reset7" />
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/tkg"
+                android:layout_row="10"
+                android:layout_column="2"
+                android:hint="   kg"
+                android:backgroundTint="#005FFF"
+                android:digits="1234567890."
+                android:nestedScrollingEnabled="false"
+                android:layout_marginLeft="6dp"
+                android:layout_width="200dp"
+                android:minHeight="50dp"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/button58"
+                android:layout_row="10"
+                android:layout_column="3"
+                android:background="@drawable/btnback"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:onClick="tcon" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:id="@+id/button59"
+                android:layout_row="10"
+                android:layout_column="4"
+                android:textSize="10dp"
+                android:background="@drawable/btnback"
+                android:textColor="#fff"
+                android:onClick="reset8" />
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

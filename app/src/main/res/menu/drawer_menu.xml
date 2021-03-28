@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/Home"
+    android:title="Home"
+    android:icon="@drawable/homeicon"/>
+    <item android:id="@+id/title"
+        android:title="Calculator"
+        android:icon="@drawable/blackcalc"
+        />
+    <item android:id="@+id/conv"
+        android:title="Converter"
+        android:icon="@drawable/blackscales"/>
+    <item android:id="@+id/personal"
+        android:title="My_functions"
+        android:icon="@drawable/blackpersonal"/>
+    <item android:id="@+id/Equations"
+        android:title="Equations"
+        android:icon="@drawable/blackeq"/>
+
+</menu>

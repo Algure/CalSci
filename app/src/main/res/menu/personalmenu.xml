@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:title="reput"
+    android:id="@+id/reput"
+    android:icon="@drawable/undoicon"
+    app:showAsAction="always"/>
+    <item android:title="edit"
+        android:id="@+id/edit"
+        android:icon="@drawable/editicon"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        />
+    <item android:title="delete"
+        android:id="@+id/del"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+
+</menu>
